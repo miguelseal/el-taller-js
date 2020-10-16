@@ -34,5 +34,5 @@ console.log(product);
 var name = "Fernando";
 var age = 38;
 
-document.write("<p>Hola, me llamo " + name + ", tengo " + age + " años.</p>");
+document.write("<p>Hola, me llamo " + name + ", tengo " + age + " años.</p><hr>");
 document.write("<p>Me gusta estudiar <strong>programación</strong>.</p>");
