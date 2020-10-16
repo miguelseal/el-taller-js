@@ -17,9 +17,9 @@ alert("Hola, tengo " + num1);
 var even = null;
 
 if (num1 % 2 === 0) {
-    even = true;
+    even = "Par"
 } else {
-    even = false;
+    even = "Impar";
 }
 
 console.log(even);
