@@ -105,4 +105,7 @@ document.write("<p>El mayor numero de los 3 es: ", greatest, ".</p>");
 //Ejercicio 5 (Divisible por 2).
 document.write("<h2>Practico 2 - Ej 5.</h2>");
 
+var num = parseInt(prompt("Escribe un numero para chequear si es divisible entre 2"));
+var msg = " es divisible entre 2.";
 
+num % 2 === 0 ? document.write("<p>", num, msg, "</p>") : document.write("<p>", num, " NO ", msg, "</p>");
