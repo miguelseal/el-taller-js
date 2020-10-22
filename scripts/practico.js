@@ -222,9 +222,9 @@ por favor».
 H2.innerHTML = 'P2-E7';
 P.innerHTML = '';
 
-let user_guilty = prompt("Eres culpable? (si/no)").toLocaleLowerCase();
+let userGuilty = prompt("Eres culpable? (si/no)").toLocaleLowerCase();
 
-switch(user_guilty) {
+switch(userGuilty) {
     case 'no':
         P.innerHTML = 'Irás a casa';
         break;
@@ -329,7 +329,7 @@ let amount, payMethodCredit;
 
 amount = parseInt(prompt('Monto a pagar:'));
 
-// Utilizao >= como valido, se chequea ingreso invalido NaN en monto.
+// Utilizo >= como valido, se chequea ingreso invalido NaN en monto.
 amount < 100 || isNaN(amount) ? alert(FAIL): payMethodCredit = parseInt(prompt('Método de pago:\n1-Tarjeta de Crédito\n2-Efectivo'));
 
 switch (payMethodCredit) { // Boolean requested.
