@@ -200,7 +200,7 @@ P.innerHTML = '';
 
 const ICE_CREAM_PRICES = [1.00, 1.50, .75, .95];
 
-let clientChoice = parseInt(prompt("Elige tu helado:\n1-Oreo\n2-KitKat\n3-Brownie\n4-Menta Granizada")) - 1; //choice = array index
+let clientChoice = parseInt(prompt("Elige tu helado:\n\n1-Oreo\n2-KitKat\n3-Brownie\n4-Menta Granizada")) - 1; //choice = array index
 let price = ICE_CREAM_PRICES[clientChoice];
 
 (price === undefined || price < 0 || price > ICE_CREAM_PRICES.length) ? //
@@ -222,7 +222,7 @@ por favor».
 H2.innerHTML = 'P2-E7';
 P.innerHTML = '';
 
-let user_guilty = prompt("Eres culpable? (si/no").toLocaleLowerCase();
+let user_guilty = prompt("Eres culpable? (si/no)").toLocaleLowerCase();
 
 switch(user_guilty) {
     case 'no':
@@ -260,7 +260,7 @@ H2.innerHTML = 'P2-E9';
 P.innerHTML = '';
 
 // Utilizamos variables anteriores: ICE_CREAM_PRICES array, clientChoice, price
-clientChoice = parseInt(prompt("Elige tu helado:\n1-Oreo\n2-KitKat\n3-Brownie\n4-Menta Granizada"));
+clientChoice = parseInt(prompt("Elige tu helado:\n\n1-Oreo\n2-KitKat\n3-Brownie\n4-Menta Granizada"));
 
 switch (clientChoice) {
     case 1: 
