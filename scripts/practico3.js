@@ -76,16 +76,18 @@ console.log(SEPARATOR);
 
 //Ej.7 Numero primo
 n = parseInt(prompt('7-Escribe un entero'));
+msg = 'Primo';
 
 for (let i = 2; i < n; i++) {
+
     if (n % i === 0) {
-        console.log('No es numero primo');
-        break;
+        msg = 'No primo';
     } else {
-        console.log('Es numero primo');
-        break;
+        continue;
     }
 }
+console.log(msg);
+
 console.log(SEPARATOR);
 
 //Ejercicio 8 - Mostrar numeros de N a 1, step 1.
@@ -163,6 +165,8 @@ for (i = 1; i <= K; i++) {
     console.log(fila);
 }
 
+console.log(SEPARATOR);
+
 //Ejercicio Bucle anidado 3 -. Piramide de cosas raras. En consola
 
 let rowCounter, colCounter, tokenFicha, token1, token2;
@@ -182,5 +186,6 @@ for (rowCounter = 1; rowCounter <= K; rowCounter++) {
     console.log(texto);
 }
 
+console.log(SEPARATOR);
 
 
