@@ -167,6 +167,25 @@ for (i = 1; i <= K; i++) {
 
 console.log(SEPARATOR);
 
+//Ejercicio Bucle anidado 2 - tabla de filas y columnas
+let rows, cols, numberToDisplay, rowDisplay;
+
+rows = parseInt(prompt('BA-2 : Escriba numero de filas'));
+cols = parseInt(prompt('BA-2 : Escriba numero de columnas'));
+numberToDisplay = rows * cols;
+
+for (let i = 1; i <= rows; i++) {
+    rowDisplay = '';
+    
+    for (let j = 1; j <= cols; j++) {
+        rowDisplay += `${String(numberToDisplay)} `;
+        numberToDisplay --;
+    }
+    console.log(rowDisplay);
+}
+
+console.log(SEPARATOR);
+
 //Ejercicio Bucle anidado 3 -. Piramide de cosas raras. En consola
 
 let rowCounter, colCounter, tokenFicha, token1, token2;
