@@ -344,3 +344,5 @@ switch (payMethodCredit) { // Boolean requested.
     default:
         alert(FAIL);
 }
+
+document.write('<p><a href="practico3.html">Ir al Practico 3</a></p>');
