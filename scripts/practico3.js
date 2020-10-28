@@ -150,6 +150,53 @@ console.log(resultado);
 
 console.log(SEPARATOR);
 
+//Ejercicios WHILE;
+//1-1
+//1-2
+//1-3
+//1-4
+//1-5
+//1-6
+//1-7
+//1-8
+//1-9
+//1-10
+//1-11
+
+
+// 2 - Media aritmetica de numeros
+let totalizer = 0;
+let inputCounter = 0;
+let userInput; // float or int
+let avg;
+
+do {
+    userInput = Number(prompt('WHILE 2-Promedio : Ingresa un numero (0 para terminar)'));
+
+    if (userInput === 0) { break; }
+
+    totalizer += userInput;
+    inputCounter += 1;
+    //for debugging:
+    console.log(userInput, inputCounter, totalizer);
+} while (userInput !== 0)
+
+avg = totalizer / inputCounter;
+alert(`Media Aritmetica de los numeros ingresados: ${String(avg)}`);
+
+//3
+
+
+
+
+
+
+
+
+
+
+
+
 //Ejercicio Bucle anidado 1. Piramide de numeros.
 //En consola
 let i, j, fila;
@@ -176,7 +223,7 @@ numberToDisplay = rows * cols;
 
 for (let i = 1; i <= rows; i++) {
     rowDisplay = '';
-    
+
     for (let j = 1; j <= cols; j++) {
         rowDisplay += `${String(numberToDisplay)} `;
         numberToDisplay --;
@@ -187,7 +234,6 @@ for (let i = 1; i <= rows; i++) {
 console.log(SEPARATOR);
 
 //Ejercicio Bucle anidado 3 -. Piramide de cosas raras. En consola
-
 let rowCounter, colCounter, tokenFicha, token1, token2;
 K = 6;
 
@@ -206,5 +252,3 @@ for (rowCounter = 1; rowCounter <= K; rowCounter++) {
 }
 
 console.log(SEPARATOR);
-
-
